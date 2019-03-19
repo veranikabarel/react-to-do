@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Task from './components/input';
+import img from './list.png'
+import Credits from './components/credits';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className='container'>
+                <div className='row header'><Task/></div>
+
+                <div className='row'>
+                    <div className='col left-col img'><img src={img} alt={"list"}/></div>
+                    <div className='col right-col'></div>
+                </div>
+
+                <div className='row'><Credits/></div>
+            </div>
+        );
+    }
 }
 
 export default App;
