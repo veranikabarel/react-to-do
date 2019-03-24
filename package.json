@@ -1,7 +1,9 @@
 {
   "name": "react-to-do",
   "version": "0.1.0",
-  "private": true,
+  "engines": {
+    "node": "^10"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.4",
